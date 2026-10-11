@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-4.0.0.js"></script>
+</head>
+<body>
+        
+<div id="one">wellcome</div>
+<div class="two">hello 1</div>
+<div class="two">hello 2</div>
+
+
+<p> paragraph 1</p>
+<p> paragraph 2</p> <br>
+
+<form action="">
+    <input type="text" placeholder="Enter text" >
+    <input type="password" placeholder="Enter password">
+
+</form>
+
+  <div class="container">
+    <p>paragraph 3</p>
+    <p>paragraph 4</p>
+    </div>
+
+    <div class="prents">
+        <p>essay</p>
+       <div>
+        <p> not paragraph</p>
+       </div>
+    </div>
+
+
+<script>
+    // id selector
+    $("#one").text("bye world" );
+
+    //class selector
+    $(".two").css("background-color","red");
+
+    // //Element selector
+    // $("p").hide();
+
+
+   //Attribute selector
+   $("[placeholder]").css("border","2px solid" );
+
+
+  //Descendant selector
+   $(".container p").css("color","blue");
+   
+   //child selector
+    $(".prents > p").css("font-weight","bold");
+    $(".prents > div > p").css("color","green");
+
+
+</script>
+
+</body>
+</html>
