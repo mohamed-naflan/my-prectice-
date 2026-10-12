@@ -1,3 +1,22 @@
-h1{
-    color:black;
+body
+
+{
+    background:url(../Images/image7.jpg);
+    background-size: cover;
+
+}
+
+
+h1
+{
+    color:rgb(235, 247, 5);
+    text-align:center;
+    border:5px solid black;
+    width:600px;
+    margin:0 auto;
+    margin-top:150px;
+    margin-left:px;
+    padding:15px;
+    font-size:30px;
+    border-radius:30px;
 }
