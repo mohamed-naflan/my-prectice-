@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS trickes</title>
+    <style>
+        .box1{
+              width:200px;
+              height:200px;
+               background-color:blue;
+               margin-top:20%; 
+               margin-left: 20%;
+               /* transition-delay:500MS;
+               transition-duration:3s;
+               transition-timing-function:linear;
+               transition-property:all; */
+
+               animation:MT 2s linear infinite alternate;
+            }
+/*        
+        .box1:hover
+        {
+          transform:rotate(360deg);
+            
+        } */
+
+        @keyframes MT{
+            0%{
+
+            }
+            25%{
+                border-radius:25%;
+                background-color: aqua;
+                transform: rotate(50deg);
+
+            }
+
+            50%{ width: 400px;
+                
+
+            }
+
+            100%{
+                border-radius:50%;
+                background-color: chartreuse;
+                 transform: rotate(100deg);
+
+            }
+        }
+
+ 
+        
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+
+
+
+</body>
+</html>
