@@ -1,0 +1,41 @@
+.container 
+{
+    width:75%;
+    text-align: center;
+    margin: auto;
+
+
+}
+.dice
+{
+    text-align:center ;
+    display: inline-block;
+}
+
+body{
+   background-color:rgb(159, 150, 144)
+
+}
+ h1
+ {
+    margin:30px;
+    font-size:80px;
+    color:rgb(26, 122, 122)
+ }
+ p
+ {
+    font-size:30px;
+    color:rgb(6, 72, 50);
+ }
+ img
+ {
+    width:80%;
+ }
+
+ footer
+ {
+    text-align: center;
+    margin-top:3%;
+    font-size: 20px;
+    color:aqua;
+ }
