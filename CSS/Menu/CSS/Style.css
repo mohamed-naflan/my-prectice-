@@ -1,4 +1,29 @@
-.one ul li ,.one p    
+ul
 {
-    color:red;
+    list-style:none;
+    background-color:rgb(238, 238, 46);
+    margin-left:500px;
+    overflow: hidden;
+    width:500px;
+    
+
+}
+
+ul li{
+           float:left;
+           padding:20px;
+}          
+
+ul li:hover
+{
+    background-color: aqua;
+}
+
+ul li a{
+    text-decoration: none;
+
+}
+ul li a:hover
+{
+    color:brown;
 }
