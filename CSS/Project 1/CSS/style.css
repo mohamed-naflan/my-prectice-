@@ -32,48 +32,157 @@
 
  .container
  {
-    width:80%;
-    height: 800px;
-    background-color:red;
-    margin: 0 auto;
-    
-  }
+   width: 80%;
+   height: 1000px ;
+  
+   margin:0 auto;
 
-  .container div 
+ }
+
+ .div1
  {
-    width: 100%;
-    height: 40px;
-    background-color: rgb(170, 255, 42);
-    padding: 0%;
-    margin:0%;
-    
+   width:100%;
+   height: 80px;
+   background-color: rgb(150, 187, 103);
  }
 
- .div1 ul
+ .div1 ul 
  {
-    list-style:none;
-    float:right;
+   list-style:none;
+   float: right;
  }
 
- .div1 ul li {
-    float: left;
-    padding: 20px;
-    
+ .div1 ul li 
+ {
+   float: left;
+   padding: 10px 20px;
  }
 
- .div1 li a{
-    text-decoration: none;
-    font-size:20px;
-    font-weight:100px;
-    
+
+ .div1 ul li a{
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: 100;
+   
  }
 
-  .div1  ul li :hover
+ .div1 ul li :hover{
+   background-color: aqua;
+ }
+
+ .div2
+ {
+   width: 100%;
+   height: 600px;
+   
+ }
+ .div2 img{
+   height: 100%;
+   width: 100%;
+ }
+
+ .one 
 {
-    background-color: aqua;
-    
+   height: 500px;
+   width: 32%;
+   background-color: rgb(50, 50, 7);
+   border-radius: 10%;
+   float: left;
+   margin-top: 30px;
 }
 
+
+ .two
+{
+   height: 500px;
+   width: 32%;
+   background-color: rgb(0, 255, 179);
+   border-radius: 10%;
+   float: left;
+   margin-left: 25px;
+    margin-top: 30px;
+}
+
+
+ .three
+{
+   height: 500px;
+   width: 32%;
+   background-color: rgb(7, 149, 231);
+   border-radius: 10%;
+   float: right;
+    margin-top: 30px;
+}
+
+.one h1
+{
+   color:white;
+   text-align: center;
+   font-weight: 200px;
+}
+
+.one p
+{
+   color:white;
+   text-align: justify;
+   padding-left: 40px;
+   padding-right: 40px;
+}
+ .one a{
+   color:rgb(255, 28, 28);
+   text-decoration: none;
+   margin-left: 140px;
+   padding:10px;
+   background-color: aliceblue;
+   border:3px solid black;
+ }
+
+
+
  
+.two h1
+{
+   color:white;
+   text-align: center;
+   font-weight: 200px;
+}
 
+.two p
+{
+   color:white;
+   text-align: justify;
+   padding-left: 40px;
+   padding-right: 40px;
+}
+ .two a{
+   color:rgb(255, 28, 28);
+   text-decoration: none;
+   margin-left: 140px;
+   padding:10px;
+   background-color: aliceblue;
+   border:3px solid black;
+ }
 
+ 
+.three h1
+{
+   color:white;
+   text-align: center;
+   font-weight: 200px;
+}
+
+.three p
+{
+   color:white;
+   text-align: justify;
+   padding-left: 40px;
+   padding-right: 40px;
+}
+ .three a{
+   color:rgb(255, 28, 28);
+   text-decoration: none;
+   margin-left: 140px;
+   padding:10px;
+   background-color: aliceblue;
+   border:3px solid black;
+ }
