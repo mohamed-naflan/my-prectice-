@@ -28,16 +28,24 @@
 //  console.log("next oparation");
 
 //Asynchrouns
- const fs=require("fs");
- fs.readFile("student.text","utf8",(err,data)=>
- {
-    if(err)
-    {
-        console.log("error reading file");
-        return;
-    }
+//  const fs=require("fs");
+//  fs.readFile("student.text","utf8",(err,data)=>
+//  {
+//     if(err)
+//     {
+//         console.log("error reading file");
+//         return;
+//     }
 
-    console.log(data);
- });
+//     console.log(data);
+//  });
 
- console.log("next oparation");
+//  console.log("next oparation");
+
+
+const fs =require("fs");
+const path =require("path");
+const filepath =path.join(__dirname,"student.txt");
+const data =fs.readFileSync(filepath,"utf-8");
+
+console.log(data);
