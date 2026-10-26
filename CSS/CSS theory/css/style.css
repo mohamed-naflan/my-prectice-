@@ -1,0 +1,31 @@
+/* a:link 
+{
+    color:red;
+} */
+/* 
+ 
+ a:visited
+ {
+    color:aqua;
+ } */
+
+/* 
+ a:hover
+ {
+    color:bisque;
+ } */
+
+
+ a:focus
+ {
+    color: blue;
+    
+ } 
+
+
+/*
+
+ a:active
+ {
+    color:rgb(113, 226, 43);
+ } */
