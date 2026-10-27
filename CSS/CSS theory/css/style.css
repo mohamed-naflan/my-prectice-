@@ -1,31 +1,35 @@
-/* a:link 
-{
-    color:red;
-} */
-/* 
- 
- a:visited
+h2{
+   text-align: center;
+}
+
+ .left
  {
-    color:aqua;
- } */
+   text-shadow:-2px 0 0 aqua;
+ }
 
-/* 
- a:hover
+ .rigth
  {
-    color:bisque;
- } */
+   text-shadow: 2px 0 0  yellow;
+ }
 
-
- a:focus
+ .top
  {
-    color: blue;
-    
- } 
+   text-shadow:0 -2px 0 aquamarine;
+ }
 
-
-/*
-
- a:active
+ .botton
  {
-    color:rgb(113, 226, 43);
- } */
+   text-shadow: 0 2px 0 yellow;
+ }
+
+ .sadow
+ {
+   text-shadow: 0 0 10px green;
+ }
+
+
+ .combine
+ {
+   text-shadow: 0 0 10px black;
+   color:white;
+ }
