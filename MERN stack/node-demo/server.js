@@ -1,12 +1,12 @@
 const http=require("http");
-const server=http.createServer((req,yes)=>
+const server=http.createServer((req, yes)=>
  {
     resizeBy.writeHead(200,
         {
             "content-type":"text"
         });
 
-        res.end("Hello from.Node.js sever!");
+        res.end("Hello from Node.js sever!");
     
  } )
  
