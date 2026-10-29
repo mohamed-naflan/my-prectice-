@@ -26,7 +26,98 @@ app.get("/students/:id/courses/:course", (req, res) => {
 });
 
 
+
+
+   app.get("/api/students",(req,res)=>
+   {
+    res.json(
+      {
+        massege:"students req succses",
+        student:[
+          {id:103,name:"nappu"},
+          {id:102,name:"mohamed"}]
+      });
+   });
   
+   
+    let students=[
+       {id:1,name:"raja",age:20,course:"SE"},
+       {id:2,name:"fathima",age:17,course:"SE"}
+
+    ];
+
+    //GET
+    app.get("/students-demo",(req,res)=>
+    {
+      res.status(200).json(students);
+    });
+
+// app.get("/students-demo/:id",(req,res)=>
+//     {
+//       const id=Number(req.params.id);
+//       const student=students.find((s)=> s.id ===id);
+
+//       if(!student){
+//         res.status(404).json({
+//             message: "Student not found"
+//         });
+//     } else {
+//         res.status(200).json(student);
+//     }
+//     });
+     
+
+
+    app.get("/students-demo/:id", (req, res) => {
+    const id = Number(req.params.id);
+    const student = students.find((s) => s.id === id);
+
+    if (!student) {
+        return res.status(404).json({
+            message: "Student not found"
+        });
+    }
+
+     res.status(200).json(student);
+});
+
+   //POST
+   app.post("/students-demo",(req,res)=>
+   {
+       const newstudent=req.body;
+       students.push(newstudent);
+
+       res.status(201).json(
+        {massege:"students add",
+         student:newstudent
+        }
+       );
+      } );
+
+      //put
+      app.put("/students-demo/:id",(req,res) =>
+    {
+      const id=Number(req.params.id);
+      const index=student.findIndex((s)=> s.id===id);
+       
+      if(index===-1);{
+         return res.status(404).json(
+          {
+            massege:"student not found"
+          }
+         );
+      }
+      students[index]={id,...req.body};
+
+      res.status(200).json({
+        massege:"student replaces",
+        student:students[index]
+      });
+    });
+    
+      //PATCH
+     
+
 
 //  app.get("/search/brand",(req,res)=>
 //   {
