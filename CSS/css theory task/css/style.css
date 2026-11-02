@@ -1,0 +1,29 @@
+body
+{
+    margin:0;
+}
+
+a
+{
+    text-decoration:none;
+}
+
+ul
+{
+    list-style-type:none;
+    background-color:#219ad2;
+    height:50px;
+    margin:0;
+    padding-top:10px;
+}
+
+
+li
+
+{
+    display:inline-block;
+    padding:15px;
+    background-color:bisque;
+    margin-right:15px;
+    padding:10px;
+}

@@ -110,7 +110,7 @@ app.get("/students/:id/courses/:course", (req, res) => {
       students[index]={id,...req.body};
 
       res.status(200).json({
-        massege:"student replaces",
+        massege:"student replaces",   
         student:students[index]
       });
     });
