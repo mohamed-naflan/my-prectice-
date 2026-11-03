@@ -1,5 +1,8 @@
 import express from"express";
 const app=express();
+
+app.use(express.json());
+
 app.get("/",(req,res)=>
  {
      res.send("Hello world");
@@ -116,8 +119,46 @@ app.get("/students/:id/courses/:course", (req, res) => {
     });
     
       //PATCH
-     
 
+      app.patch("/students-demo/:id", (req, res) => {
+
+    const id = Number(req.params.id);
+
+    const student = students.find((s) => s.id === id);
+
+    if (!student) {
+        return res.status(404).json({
+            message: "Student not found"
+        });
+    }
+
+    Object.assign(student, req.body);
+
+    res.status(200).json({
+        message: "Student updated successfully",
+        student: student
+    });
+
+});
+
+
+//DLETE
+  app.delete("/students-demo/:id", (req, res) => {
+    const id = Number(req.params.id);
+    const index = students.findIndex((s) => s.id === id);
+
+    if (index === -1) {
+        return res.status(404).json({
+            message: "Student not found"
+        });
+    }
+
+    students.splice(index, 1);
+
+    res.status(200).json({
+        message: "Student deleted successfully"
+    });
+});
 
 //  app.get("/search/brand",(req,res)=>
 //   {
