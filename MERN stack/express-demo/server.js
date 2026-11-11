@@ -5,12 +5,16 @@ import morgan from "morgan";
 
 import studentRoutes from "./Routes/studentroute.js";
 
+import errorHandler from "./middleware/errormiddleware.js";
+
 const app = express();
+
+app.set("view engine", "ejs");
  
 
 // Middleware
 app.use(express.json());
-app.use(morgan("dev"));
+app.use(morgan("dev"));   
 
 //custom middleware
 const requestLogger=(req, res, next) => 
@@ -34,6 +38,23 @@ app.use("/api/students", studentRoutes);
 app.get("/", (req, res) => {
     res.send("Welcome to Student API");
 });
+
+
+//EJS route
+app.get("/wellcome", (req, res) =>
+{
+    res.render("wellcome",
+         {
+             name:"vimal",
+             course:"MERN stack"
+            });
+      
+
+        });
+
+
+
+app.use(errorHandler);
 
 app.listen(3000, () => {
     console.log("Server running on port 3000");
