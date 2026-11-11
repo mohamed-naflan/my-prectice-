@@ -14,7 +14,9 @@ app.set("view engine", "ejs");
 
 // Middleware
 app.use(express.json());
-app.use(morgan("dev"));   
+app.use(morgan("dev")); 
+app.use(express.static("public")); // Serve static files from the "public" directory
+
 
 //custom middleware
 const requestLogger=(req, res, next) => 
@@ -45,12 +47,38 @@ app.get("/wellcome", (req, res) =>
 {
     res.render("wellcome",
          {
-             name:"vimal",
+            title:"wellcome page",
+             name:"NAFLAN",
              course:"MERN stack"
             });
       
 
         });
+
+
+
+
+ // student list EJS
+ app.get("/student-page", (req, res) =>
+ {
+    const students=[
+        {id:1,name:"yasir",age:22,course:"MERN"},
+        {id:2,name:"vimal",age:23,course:"MERN"},
+        {id:3,name:"suresh",age:24,course:"MERN"},
+        {id:4,name:"kumar",age:17,course:"MERN"}
+    ];
+    res.render("student", { title: "Student List", students: students });
+ });
+
+
+
+  //about page EJS
+  app.get("/about", (req, res) => {
+
+    res.render("about",{
+        title:"About Us"
+    });
+  });
 
 
 
