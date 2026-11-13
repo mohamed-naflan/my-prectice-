@@ -55,7 +55,7 @@ app.get("/wellcome", (req, res) =>
 
         });
 
-
+     
 
 
  // student list EJS
