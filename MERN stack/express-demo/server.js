@@ -94,7 +94,7 @@ app.get("/wellcome", (req, res) =>
 
    //contect page RJS
  app.get("/contact", (req, res) => {
-    res.render("partials/contact", {
+    res.render("contact", {
         title: "Contact"
     });
 });
