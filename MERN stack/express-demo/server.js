@@ -60,11 +60,23 @@ app.get("/wellcome", (req, res) =>
          {
             title:"wellcome page",
              name:"NAFLAN",
-             course:"MERN stack"
+             course:"MERN STACK"
             });
       
 
         });
+
+       app.get("/student-info",(req,res)=>
+       {
+        res.render("student-info",
+            {
+                name:"mohamed",
+                age:19,
+                course:"MERN STACK"
+            }
+        );
+       }); 
+
 
      
 

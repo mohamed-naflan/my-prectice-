@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -56,8 +58,8 @@ th {
 
 
 
-
-
+/* 
+contect page */
 .contact-section {
     max-width: 800px;
     margin: 40px auto;
@@ -165,7 +167,7 @@ form select {
     transition: 0.3s;
 }
 
-/* Focus Effect */
+/*  Effect */
 
 form input:focus,
 form select:focus {
